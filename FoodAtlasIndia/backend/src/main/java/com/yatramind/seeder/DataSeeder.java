@@ -174,7 +174,7 @@ public class DataSeeder implements CommandLineRunner {
                 Food.builder().name("Siddu").price(150).isVeg(true).rating(4.3)
                         .description("Steamed wheat bread stuffed with poppy seeds").category("Main Course")
                         .restaurant("Chopsticks").priceRange("₹100-200").mustTry(true)
-                        .imageUrl("https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400").city(manali)
+                        .imageUrl("https://images.herzindagi.info/image/2023/Aug/how-to-make-siddhu-at-home.jpg").city(manali)
                         .build()));
 
         // --- Udaipur ---
@@ -558,7 +558,7 @@ public class DataSeeder implements CommandLineRunner {
         foodRepository.save(Food.builder().name("Chana Madra").price(150).isVeg(true).rating(4.3)
                 .description("Chickpeas cooked in yogurt gravy with Himachali spices — local comfort food")
                 .category("Main Course").restaurant("Wake & Bake Cafe").priceRange("₹120-200").mustTry(true)
-                .imageUrl("https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400").city(shimla).build());
+                .imageUrl("https://images.picxy.com/cache/2020/8/2/ed6683cad36b69f82ed539f850aa16ad.jpg").city(shimla).build());
 
         // --- Kolkata ---
         City kolkata = cityRepository.save(City.builder().name("Kolkata").state("West Bengal").tagline("City of Joy")
@@ -760,7 +760,7 @@ public class DataSeeder implements CommandLineRunner {
         foodRepository.save(Food.builder().name("Fish Tikka").price(300).isVeg(false).rating(4.5)
                 .description("Fresh catch of the day marinated in spices and grilled — island-fresh seafood")
                 .category("Main Course").restaurant("Anju Coco Restaurant").priceRange("₹200-400").mustTry(true)
-                .imageUrl("https://images.unsplash.com/photo-1574484284002-952d92456975?w=400").city(andaman).build());
+                .imageUrl("https://www.shutterstock.com/image-photo/fish-tikka-260nw-273799436.jpg").city(andaman).build());
 
         log.info("Seeded 25 cities with places, hotels, and foods");
     }
